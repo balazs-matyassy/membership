@@ -24,4 +24,12 @@ public class MembershipController {
         return "result";
     }
 
+    @GetMapping("/nagyok")
+    public String listNagyNames(Model model) {
+        List<Membership> memberships = membershipRepository.findByNameContaining("nagy");
+        model.addAttribute("result", memberships);
+
+        return "result";
+    }
+
 }
