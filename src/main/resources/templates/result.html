@@ -5,6 +5,14 @@
     <title>Query results</title>
 </head>
 <body>
+<div style="border: 1px solid gray;">
+    <!-- action önmagára mutat: ez a default -->
+    <!-- method = get: ez a default -->
+    <form><!-- <form method="get"> -->
+        Keresés a nevekben: <input type="text" name="pattern">
+        <button type="submit">Keresés</button>
+    </form>
+</div>
 <h1>Query results</h1>
 <ul>
     <li data-th-each="row: ${result}" data-th-text="${row}"></li>
