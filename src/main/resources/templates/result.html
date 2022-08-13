@@ -9,7 +9,8 @@
     <!-- action önmagára mutat: ez a default -->
     <!-- method = get: ez a default -->
     <form><!-- <form method="get"> -->
-        Keresés a nevekben: <input type="text" name="pattern">
+        Keresés a nevekben:
+        <input type="text" name="pattern" data-th-value="${pattern}">
         <button type="submit">Keresés</button>
     </form>
 </div>

@@ -45,6 +45,8 @@ public class MembershipController {
             memberships = membershipRepository.findByNameContaining(pattern);
         }
 
+        // állapottartás
+        model.addAttribute("pattern", pattern);
         model.addAttribute("result", memberships);
 
         return "result";
